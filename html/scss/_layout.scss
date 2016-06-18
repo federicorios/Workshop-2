@@ -1,6 +1,19 @@
 /***********************************/
 /*=========     GLOBAL     =========*/
 /***********************************/
+body {
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+#banner {
+	margin-top: 50px;
+}
+
+%contenedores {
+	padding: 100px 0;
+}
+
 
 
 
@@ -8,13 +21,237 @@
 /*=========     HEADER     =========*/
 /***********************************/
 
+.navbar-default {
+	background-color: #f5f5f5;
+}
+.navbar-header {
+	
+	img {
+		width: 79px;
+   	    margin-top: -29px;
+	}
+}
+
+#banner{
+   background: url(../imagenes/pirata.jpg) center center/cover;
+}
+.intro-text{
+   padding: 100px 0 50px;
+   color: #fff;
+   h2{
+      /*font: 400 italic 22px/22px $fourth-font;*/
+      font-weight: 400;
+      font-style: italic;
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 25px
+  	}
+ }
 
 
 /***********************************/
-/*=========     TEAM     =========*/
+/*=========     services     =========*/
 /*********************************/
+ #services {
+  @extend %contenedores;
 
+  .box-services {
+ 	margin-top: 100px;
+  }
+ .glyphicon{
+        width: 115px;
+        height: 115px;
+        background-color: #1976D2;
+        border-radius: 50%;
+        line-height: 115px;
+        color: #fff !important;
+        font-size: 50px !important;
+    }
+    .two {
+			background-color: yellow;
+        }
+
+     .three {
+     	background-color: #536DFE;
+     }
+     .for {
+     	background-color: #E64A19;
+     }
+ }
+
+ .boton {
+       -webkit-transition: .5s ease-in-out;
+       -moz-transition: .5s ease-in-out;
+       -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+       }
+
+
+.boton:hover{
+            -webkit-transform: scale(1.35);
+             transform: scale(1.35);
+             cursor: pointer;
+           }
+ 
 
 /************************************/
-/*=========     FOOTER     =========*/
+/*=========    portfolio     =========*/
 /**********************************/
+#portfolio {
+	@extend %contenedores;
+	background-color: #f5f5f5;
+}
+article {
+	img {
+		max-width: 400px;
+		max-height: 200px;
+	}
+}
+/************************************/
+/*=========    about     =========*/
+/**********************************/
+#about {
+	@extend %contenedores;
+}
+/************************************/
+/*=========    work team     =========*/
+/**********************************/
+#team {
+  @extend %contenedores;
+  background-color: #f5f5f5;
+}
+
+.team {
+
+  margin-top: 50px;
+  img {
+    margin:auto;
+    border: 5px solid white;
+  }
+  h3 {
+    font: 700 20px Roboto;
+    text-transform: capitalize;
+  }
+  p {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: gray;
+    margin-top: -5px;
+  }
+}
+
+.social {
+    li {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      @include b-ra(50%);
+      background-color: black;
+      color: white;
+      margin: 0 5px;
+      text-align: center;
+      span {
+        font-size: 22px;
+        position: relative;
+        top: 4px;
+      }
+    }
+}
+
+.p-team {
+  font: 700 14px Roboto;
+  color: gray;
+  margin-top: 50px;
+  line-height: 24px;
+}
+/************************************/
+/*=========    form     =========*/
+/**********************************/
+#contact {
+	@extend %contenedores;
+}
+form input{
+   width: 100%;
+   height: 60px;
+   border: none;
+   border-top: 1px solid grey;
+}
+
+.primer-input {
+	border: none;
+	margin-top: 50px;
+}
+textarea{
+   width: 100%;
+   height: 150px;
+   border: none;
+   border-top: 1px solid grey;
+   border-bottom: 1px solid grey;
+}
+
+.btn-contact{
+   color: white;
+   background-color: #2B3E4F;
+   width: 150px;
+   height: 50px;  
+   margin-top: 10px;
+   border-radius: 10%;
+   font-size: 20px;
+}
+
+/************************************/
+/*=========    footer     =========*/
+/**********************************/
+
+
+footer{
+   background-color: #2B3E4F ;
+   color: white;
+}
+
+footer h5{
+    text-transform: uppercase;
+   font-weight: bold;
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+
+footer p{
+   line-height: 24px;
+}
+
+.footer{
+   display: inline-block;
+   width: 29%;
+   text-align: center;
+}
+
+.footer2{
+   display: inline-block;
+   text-align: center;
+   width: 69%;
+}
+
+.iconos1{
+   font-size: 25px;
+   color: white;
+   line-height: 38px;
+}  
+
+.iconos li{
+   display: inline-block;
+   margin: 8px;
+   border-radius: 50%;
+   border: 1px solid white;
+   height: 40px;
+   width: 40px;
+
+}
+
+.last{
+   background-color: #213140 ;
+   text-align: center;
+   padding: 25px;
+   color: white;
+
+}
